@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Card Container */
+.card {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+    position: relative; /* For positioning the button */
+}
+
+/* Profile Image */
+.card-image img {
+    width: 100%; /* 100% of container width */
+    height: auto;
+    display: block;
+}
+
+/* Content */
+.card-content {
+    padding: 16px;
+}
+
+.name {
+    font-size: 1.5em; /* Relative unit */
+    margin-bottom: 0.5em;
+}
+
+.title {
+    font-size: 1em;
+    color: #888;
+    margin-bottom: 1em;
+}
+
+.bio {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 1.5em;
+    padding: 0 10%; /* Responsive padding */
+}
+
+/* Follow Button */
+.follow-button {
+    position: absolute; /* Positioned relative to .card */
+    bottom: 16px;
+    right: 16px;
+    padding: 8px 16px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+.follow-button:hover {
+    background-color: #1c86ee;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 500px) {
+    .card {
+        width: 90vw;
+    }
+    .bio {
+        padding: 0 5%;
+    }
+}
+
+</style>
+<body>
+    <div class="card">
+        <div class="card-image">
+            <img src="img/user.png"Profile Picture">
+        </div>
+        <div class="card-content">
+            <h2 class="name">Buyantogokh Tselmeg</h2>
+            <p class="title">Student</p>
+            <p class="bio">Soonchunghyang university toursim management 2th grade student </p>
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+</body>
+</html>
